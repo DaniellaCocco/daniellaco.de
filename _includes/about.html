@@ -1,0 +1,19 @@
+<section id="about">
+  <div class="ui centered padded grid">
+    <div class="fourteen wide mobile ten wide tablet eight wide computer center aligned column">
+      <img class="ui centered small circular image" src="http://placehold.it/400x400" alt="Profile picture">
+      <h1>{{ site.name }}</h1>
+      <p>
+        <span class="description">{{ site.data.translations.profession[page.lang] }}</span><br>
+        <span class="location">🚩 {{ site.data.translations.location[page.lang] }}</span>
+      </p>
+      <p>
+        {% if page.lang == 'nl' %}
+          {% include nl/about.md %}
+        {% else %}
+          {% include en/about.md %}
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</section>

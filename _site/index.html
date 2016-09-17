@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <!-- Main metadata -->
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="map[name:Daniella Cocco email:d@daniellacoc.co]" name="author">
+  <meta content="The website of Daniella Cocco: Web developer located in Arnhem / Nijmegen, Netherlands." name="description">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Daniella Cocco">
+  <meta name="application-name" content="Daniella Cocco">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Scripts and styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+  <link href="/css/main.css" media="all" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Smooth in-page scroll
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        var $target = $(target);
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+	        window.location.hash = target;
+	      });
+      });
+      // Project cards have buttons appear on hover
+      $('#projects .special.cards .image').dimmer({
+        on: 'hover',
+      });
+      // Open a modal with project details
+      $('#projects .special.cards .ror-case.button').click(function(){
+        $('#ror-case').modal('show');
+      });
+      // Deeplinking support
+      if(window.location.hash === "#ror-case") {
+        $('#ror-case').modal('show');
+      }
+      // Lazyload project images
+      $('#projects .special.cards .image img').visibility({
+        type : 'image'
+      });
+    });
+  </script>
+  <title>Daniella Cocco: Web developer 🚩 Arnhem / Nijmegen, Netherlands</title>
+</head>
+
+  <body>
+    <div id="main-menu">
+  <div class="ui centered padded grid">
+    <div class="eight wide mobile six wide tablet four wide computer left aligned column">
+      <a class="logo" href="/">
+        <img src="/images/dc-logo.png" alt="DC WEBDEV" />
+      </a>
+    </div>
+    <div class="eight wide mobile six wide tablet four wide computer right aligned column">
+      <a class="en" href="/">
+        EN
+      </a> |
+      <a class="nl" href="/nl">
+        NL
+      </a>
+    </div>
+  </div>
+</div>
+
+    <section id="about">
+  <div class="ui centered padded grid">
+    <div class="sixteen wide mobile ten wide tablet eight wide computer column">
+      <div class="profile">
+        <img class="ui centered circular image" src="/images/profilepic.jpg" alt="Profile picture">
+        <h1>Daniella Cocco</h1>
+        <p>
+          <span class="description">Web developer</span><br>
+          <span class="location">🚩 Arnhem / Nijmegen, Netherlands</span>
+        </p>
+      </div>
+      <p>
+        
+          I can probably help you out with your web project. I built my first website way back in 2000 and have been developing websites professionally since 2009. <a href="#contact">Contact me</a> 😃
+
+        
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="ui stackable centered padded grid">
+    <div class="eight wide column">
+      <h2 class="ui horizontal divider header">Recent projects</h2>
+    </div>
+  </div>
+  <div class="ui centered padded grid">
+    <div class="twelve wide mobile sixteen wide tablet twelve wide computer column">
+      <div class="ui centered stackable special cards">
+        
+        
+          <div class="card">
+            <div class="blurring dimmable image">
+              <div class="ui inverted dimmer">
+                <div class="content">
+                  <div class="center">
+                    
+                      <a class="ui primary  button" href="http://askja.nl" target="_blank">Visit Askja</a>
+                    
+                      <a class="ui primary  button" href="http://vnc.nl" target="_blank">Visit VNC</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <img src="/images/askja.jpg" data-src="/images/askja.jpg" alt="Travel agency front-end development">
+            </div>
+            <div class="content">
+              <p class="description">
+                <p>Development of linked front-ends for collaborating travel agencies (@<a href="http://tweedegolf.nl" target="_blank">TG</a>).</p>
+
+              </p>
+            </div>
+          </div>
+        
+          <div class="card">
+            <div class="blurring dimmable image">
+              <div class="ui inverted dimmer">
+                <div class="content">
+                  <div class="center">
+                    
+                      <a class="ui primary  button" href="http://rctgelderland.nl" target="_blank">Visit RCT</a>
+                    
+                  </div>
+                </div>
+              </div>
+              <img src="/images/rct.jpg" data-src="/images/rct.jpg" alt="RCT Gelderland">
+            </div>
+            <div class="content">
+              <p class="description">
+                <p>Wireframing and development of the responsive front-end for RCT Gelderland (@<a href="http://tweedegolf.nl" target="_blank">TG</a>).</p>
+
+              </p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="ui stackable centered padded grid">
+    <div class="eight wide column">
+      <h2 class="ui horizontal divider header">Hire me</h2>
+    </div>
+  </div>
+  <div class="ui centered padded grid">
+    <div class="sixteen wide mobile twelve wide tablet eight wide computer column">
+      <p>Let's get in touch:</p>
+      <p>
+        <a class="contact-mail" href="mailto:d@daniellacoc.co" media="all" title="Daniella Cocco - Email" type="text/html">
+          d@daniellacoc.co
+        </a>
+      </p>
+      
+      
+<p>I can take care of most small-to-medium scale web projects. For other projects, I can collaborate with dedicated UI/UX designers, back-end developers, project managers, online marketeers, et cetera.</p>
+
+<p>I can usually get back to you within a day.</p>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <footer>
+  <div class="ui stackable centered padded grid">
+    <div class="eight wide center aligned column">
+      <p>© Daniella Cocco</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

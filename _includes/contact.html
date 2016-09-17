@@ -1,0 +1,22 @@
+<section id="contact">
+  <div class="ui stackable centered padded grid">
+    <div class="eight wide center aligned column">
+      <h2 class="ui horizontal divider header">{{ site.data.translations.contact_heading[page.lang] }}</h2>
+    </div>
+  </div>
+  <div class="ui stackable centered padded grid">
+    <div class="twelve wide tablet eight wide computer center aligned column">
+      <p>{{ site.data.translations.contact_action[page.lang] }}</p>
+      <p>
+        <a class="contact-mail" href="mailto:d@daniellacoc.co" media="all" title="Daniella Cocco - Email" type="text/html">
+          {{ site.email }}
+        </a>
+      </p>
+      {% if page.lang == 'nl' %}
+        {% include nl/contact.md %}
+      {% else %}
+        {% include en/contact.md %}
+      {% endif %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<section id="projects">
+  <div class="ui stackable centered padded grid">
+    <div class="eight wide center aligned column">
+      <h2 class="ui horizontal divider header">{{ site.data.translations.projects_heading[page.lang] }}</h2>
+    </div>
+  </div>
+  <div class="ui centered padded grid">
+    <div class="ten wide mobile sixteen wide tablet twelve wide computer column">
+      <div class="ui centered stackable special cards">
+        {% if page.lang == 'nl' %}
+          {% assign projects = site.projects | where: "lang", "nl" %}
+        {% else %}
+          {% assign projects = site.projects | where: "lang", "en" %}
+        {% endif %}
+        {% for project in projects %}
+          <div class="card">
+            <div class="blurring dimmable image">
+              <div class="ui inverted dimmer">
+                <div class="content">
+                  <div class="center">
+                    {% for link in project.links %}
+                      <a class="ui primary {{ project.modal_id }} button" href="{{ link.url }}" target="{{ link.target }}">{{ link.text }}</a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+              <img src="{{ project.img_small }}" data-src="{{ project.img_large }}" alt="{{ project.img_alt }}">
+            </div>
+            <div class="content">
+              <p class="description">
+                {{ project.description }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

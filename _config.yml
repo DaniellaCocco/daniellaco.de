@@ -1,0 +1,13 @@
+# Site settings
+name: "Daniella Cocco"
+email: "d@daniellacoc.co"
+baseurl: ""
+url: "http://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Custom collections
+collections:
+  - projects
