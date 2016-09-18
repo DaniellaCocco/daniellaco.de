@@ -1,20 +1,13 @@
 ---
 lang: en
-title: "Remains of the Republic"
-img_small: "http://placehold.it/100x100"
-img_large: "http://placehold.it/800x800"
-img_alt: "Gaming clan website"
-description: "Design, development and hosting for a gaming clan website."
-modal: true
-modal_id: ror-case
+title: "RCT Gelderland"
+img_small: "/images/rct.jpg"
+img_large: "/images/rct.jpg"
+img_alt: "RCT Gelderland"
+description: "Wireframing and development of the responsive front-end for RCT Gelderland (@[TG](http://tweedegolf.nl){:target='_blank'})."
+modal: false
 links:
-  - text: "View case"
-    url: "#ror-case"
-    target: "_self"
-actions:
-  - text: "Visit website"
-    url: "http://ror.sw"
-    target: "_self"
+  - text: "Visit RCT"
+    url: "http://rctgelderland.nl"
+    target: "_blank"
 ---
-
-Loooong description.

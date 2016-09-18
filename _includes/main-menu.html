@@ -1,7 +1,17 @@
 <div id="main-menu">
-  <div class="ui center aligned padded grid">
-    <div class="sixteen wide mobile twelve wide tablet eight wide computer right aligned column">
-      <a class="en" href="/">EN</a> | <a class="nl" href="/nl">NL</a>
+  <div class="ui centered padded grid">
+    <div class="eight wide mobile six wide tablet four wide computer left aligned column">
+      <a class="logo" href="/">
+        <img src="/images/dc-logo.png" alt="DC WEBDEV" />
+      </a>
+    </div>
+    <div class="eight wide mobile six wide tablet four wide computer right aligned column">
+      <a class="en" href="{% if page.permalink-en %}{{ page.permalink-en }}{% else %}/{% endif %}">
+        EN
+      </a> |
+      <a class="nl" href="{% if page.permalink-nl %}{{ page.permalink-nl }}{% else %}/nl{% endif %}">
+        NL
+      </a>
     </div>
   </div>
 </div>

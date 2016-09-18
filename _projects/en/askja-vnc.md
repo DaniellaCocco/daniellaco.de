@@ -1,10 +1,10 @@
 ---
 lang: en
 title: "Askja & VNC"
-img_small: "http://placehold.it/100x100"
-img_large: "http://placehold.it/800x800"
+img_small: "/images/askja.jpg"
+img_large: "/images/askja.jpg"
 img_alt: "Travel agency front-end development"
-description: "Development of complex front-ends for collaborating travel agencies (@TG)."
+description: "Development of linked front-ends for collaborating travel agencies (@[TG](http://tweedegolf.nl){:target='_blank'})."
 modal: false
 links:
   - text: "Visit Askja"
@@ -14,5 +14,3 @@ links:
     url: "http://vnc.nl"
     target: "_blank"
 ---
-
-Loooong description.

@@ -1,11 +1,11 @@
 <section id="projects">
   <div class="ui stackable centered padded grid">
-    <div class="eight wide center aligned column">
+    <div class="eight wide column">
       <h2 class="ui horizontal divider header">{{ site.data.translations.projects_heading[page.lang] }}</h2>
     </div>
   </div>
   <div class="ui centered padded grid">
-    <div class="ten wide mobile sixteen wide tablet twelve wide computer column">
+    <div class="twelve wide mobile sixteen wide tablet twelve wide computer column">
       <div class="ui centered stackable special cards">
         {% if page.lang == 'nl' %}
           {% assign projects = site.projects | where: "lang", "nl" %}
@@ -28,7 +28,7 @@
             </div>
             <div class="content">
               <p class="description">
-                {{ project.description }}
+                {{ project.description|markdownify }}
               </p>
             </div>
           </div>

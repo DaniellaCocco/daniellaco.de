@@ -1,11 +1,11 @@
 <section id="contact">
   <div class="ui stackable centered padded grid">
-    <div class="eight wide center aligned column">
+    <div class="eight wide column">
       <h2 class="ui horizontal divider header">{{ site.data.translations.contact_heading[page.lang] }}</h2>
     </div>
   </div>
-  <div class="ui stackable centered padded grid">
-    <div class="twelve wide tablet eight wide computer center aligned column">
+  <div class="ui centered padded grid">
+    <div class="sixteen wide mobile twelve wide tablet eight wide computer column">
       <p>{{ site.data.translations.contact_action[page.lang] }}</p>
       <p>
         <a class="contact-mail" href="mailto:d@daniellacoc.co" media="all" title="Daniella Cocco - Email" type="text/html">
@@ -13,10 +13,15 @@
         </a>
       </p>
       {% if page.lang == 'nl' %}
-        {% include nl/contact.md %}
+        {% capture contact %}
+          {% include nl/contact.md %}
+        {% endcapture %}
       {% else %}
-        {% include en/contact.md %}
+        {% capture contact %}
+          {% include en/contact.md %}
+        {% endcapture %}
       {% endif %}
+      {{ contact|markdownify }}
     </div>
   </div>
 </section>

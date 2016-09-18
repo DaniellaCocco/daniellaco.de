@@ -85,14 +85,16 @@ p a:hover:after {
 }
 
 #main-menu {
+  color: #AAAAAA;
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 
-#main-menu {
-  color: #AAAAAA;
+#main-menu .logo img {
+  max-height: 32px;
+  max-width: 32px;
 }
 
 #main-menu a {
@@ -119,6 +121,12 @@ section#about {
   padding-top: 1.5rem;
 }
 
+section#about img {
+  max-height: 8rem;
+  max-width: 8rem;
+  opacity: .85;
+}
+
 section#about .description {
   font-style: italic;
 }
@@ -126,6 +134,15 @@ section#about .description {
 section#about .location {
   color: #888888;
   font-size: .8rem;
+}
+
+section#about .profile {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section#projects img {
+  opacity: .75;
 }
 
 section#contact {
