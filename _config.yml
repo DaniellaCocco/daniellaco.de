@@ -2,7 +2,7 @@
 name: "Daniella Cocco"
 email: "d@daniellacoc.co"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://daniellacoc.co"
 
 # Build settings
 markdown: kramdown
