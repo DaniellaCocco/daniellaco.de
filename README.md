@@ -1,4 +1,4 @@
-# Profile website for Daniella
+# Profile website
 
 Requires Jekyll.
 
@@ -6,4 +6,4 @@ Requires Jekyll.
 jekyll serve
 ```
 
-Visit (http://localhost:4000).
+Visit http://localhost:4000.
