@@ -1,1 +1,1 @@
-I can probably help you out with your web project. I built my first website way back in 2000 and have been developing websites professionally since 2009. <a href="#contact">Contact me</a> 😃
+Experienced web developer solving problems with quality code and good UI design. I built my first website way back in 2000 and have been building websites professionally since 2010. <a href="#contact">Contact me</a> 😃
