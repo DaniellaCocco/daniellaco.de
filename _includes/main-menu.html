@@ -1,15 +1,15 @@
 <div id="main-menu">
   <div class="ui centered padded grid">
     <div class="eight wide mobile six wide tablet four wide computer left aligned column">
-      <a class="logo" href="/">
-        <img src="/images/dc-logo.png" alt="DC WEBDEV" />
+      <a class="logo" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/images/dc-logo.png" alt="DC WEBDEV" />
       </a>
     </div>
     <div class="eight wide mobile six wide tablet four wide computer right aligned column">
-      <a class="en" href="{% if page.permalink-en %}{{ page.permalink-en }}{% else %}/{% endif %}">
+      <a class="en" href="{% if page.permalink-en %}{{ site.baseurl }}/{{ page.permalink-en }}{% else %}{{ site.baseurl }}/{% endif %}">
         EN
       </a> |
-      <a class="nl" href="{% if page.permalink-nl %}{{ page.permalink-nl }}{% else %}/nl{% endif %}">
+      <a class="nl" href="{% if page.permalink-nl %}{{ site.baseurl }}/{{ page.permalink-nl }}{% else %}{{ site.baseurl }}/nl{% endif %}">
         NL
       </a>
     </div>

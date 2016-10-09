@@ -3,7 +3,7 @@
 Requires Jekyll.
 
 ```
-jekyll serve
+jekyll serve --baseurl
 ```
 
-Visit http://localhost:4000.
+Visit http://localhost:4000/dc/.

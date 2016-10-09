@@ -1,7 +1,7 @@
 # Site settings
 name: "Daniella Cocco"
 email: "d@daniellacoc.co"
-baseurl: ""
+baseurl: "/dc"
 url: "http://daniellacoc.co"
 
 # Build settings
