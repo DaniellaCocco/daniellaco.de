@@ -1,6 +1,7 @@
 # Site settings
 name: "Daniella Cocco"
 email: "d@daniellacoc.co"
+baseurl: ""
 
 # Build settings
 markdown: kramdown
