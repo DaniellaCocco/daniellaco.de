@@ -27,7 +27,7 @@ p a:hover {
 }
 
 p a:after {
-  border-bottom: 1px solid #287A3C;
+  border-bottom: 1px solid #1e70bf;
   bottom: 2px;
   content: "";
   left: 0;
