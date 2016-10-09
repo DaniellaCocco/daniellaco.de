@@ -6,4 +6,4 @@ Requires Jekyll.
 jekyll serve --baseurl
 ```
 
-Visit http://localhost:4000/dc/.
+Visit [http://localhost:4000/dc/](http://localhost:4000/dc/).
