@@ -16,7 +16,6 @@ p {
 }
 
 p a:link, p a:visited, p a:hover, p a:active {
-  color: #40AD5B;
   display: inline-block;
   font-weight: bold;
   position: relative;
@@ -24,7 +23,6 @@ p a:link, p a:visited, p a:hover, p a:active {
 }
 
 p a:hover {
-  color: #287A3C;
   transition: 0.5s ease;
 }
 
@@ -42,14 +40,8 @@ p a:hover:after {
   width: 100%;
 }
 
-.ui.primary.button,
-.ui.primary.button:link {
-  background-color: #40AD5B;
-}
-
 .ui.primary.button:hover,
 .ui.primary.button:active {
-  background-color: #287A3C;
   transition: 0.5s ease;
 }
 
