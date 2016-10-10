@@ -11,6 +11,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a:hover {
+  transition: 0.5s ease;
+}
+
 p {
   line-height: 1.6em;
 }
@@ -20,10 +24,6 @@ p a:link, p a:visited, p a:hover, p a:active {
   font-weight: bold;
   position: relative;
   text-decoration: none;
-}
-
-p a:hover {
-  transition: 0.5s ease;
 }
 
 p a:after {
@@ -131,6 +131,15 @@ section#about .location {
 section#about .profile {
   padding-bottom: 3rem;
   text-align: center;
+}
+
+section#about .profile .links a {
+  color: #888888;
+  opacity: .7;
+}
+
+section#about .profile .links a:hover {
+  opacity: 1;
 }
 
 section#projects img {
