@@ -142,6 +142,10 @@ section#about .profile .links a:hover {
   opacity: 1;
 }
 
+section#about .profile .links a:after {
+  border-bottom: 0;
+}
+
 section#projects img {
   opacity: .75;
 }
