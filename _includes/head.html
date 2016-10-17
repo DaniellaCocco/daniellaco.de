@@ -45,12 +45,8 @@
 	        window.location.hash = target;
 	      });
       });
-      // Project cards have buttons appear on hover
-      $('#projects .special.cards .image').dimmer({
-        on: 'hover',
-      });
       // Lazyload project images
-      $('#projects .special.cards .image img').visibility({
+      $('#projects .cards .image img').visibility({
         type : 'image'
       });
     });

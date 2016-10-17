@@ -144,10 +144,6 @@ section#about .profile .links a:after {
   border-bottom: 0;
 }
 
-section#projects img {
-  opacity: .75;
-}
-
 section#contact {
   padding-bottom: 1.5rem;
 }
