@@ -7,10 +7,8 @@ img_alt: "Travel agency front-end development"
 description: "Ontwikkeling van gekoppelde front-ends voor samenwerkende reisbureaus (@[TG](http://tweedegolf.nl){:target='_blank'})."
 modal: false
 links:
-  - text: "Naar Askja"
+  - text: "Askja"
     url: "http://askja.nl"
-    target: "_blank"
-  - text: "Naar VNC"
+  - text: "VNC"
     url: "http://vnc.nl"
-    target: "_blank"
 ---

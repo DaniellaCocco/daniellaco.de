@@ -6,7 +6,7 @@
   </div>
   <div class="ui centered padded grid">
     <div class="fourteen wide mobile twelve wide tablet ten wide computer column eight wide large screen">
-      <div class="ui two stackable link cards">
+      <div class="ui two stackable cards">
         {% if page.lang == 'nl' %}
           {% assign projects = site.projects | where: "lang", "nl" %}
         {% else %}
@@ -18,22 +18,15 @@
               <img src="{{ project.img_small }}" data-src="{{ project.img_large }}" alt="{{ project.img_alt }}">
             </div>
             <div class="content">
-              <div class="header">Title</div>
-              <div class="meta">
-                <a>Friends</a>
-              </div>
+              <div class="header">{{ project.title }}</div>
               <div class="description">
                 {{ project.description|markdownify }}
               </div>
             </div>
-            <div class="extra content">
-              <span class="right floated">
-                Joined in 2013
-              </span>
-              <span>
-                <i class="user icon"></i>
-                75 Friends
-              </span>
+            <div class="extra right aligned content">
+              {% for link in project.links %}
+                <a class="ui mini basic {{ link.class }} button" href="{{ link.url }}">{{ link.text }}</a>
+              {% endfor %}
             </div>
           </div>
         {% endfor %}
