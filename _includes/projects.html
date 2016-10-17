@@ -5,31 +5,35 @@
     </div>
   </div>
   <div class="ui centered padded grid">
-    <div class="twelve wide mobile sixteen wide tablet twelve wide computer column">
-      <div class="ui centered stackable special cards">
+    <div class="sixteen wide mobile twelve wide tablet eight wide computer column">
+      <div class="ui two stackable link cards">
         {% if page.lang == 'nl' %}
           {% assign projects = site.projects | where: "lang", "nl" %}
         {% else %}
           {% assign projects = site.projects | where: "lang", "en" %}
         {% endif %}
         {% for project in projects %}
-          <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui inverted dimmer">
-                <div class="content">
-                  <div class="center">
-                    {% for link in project.links %}
-                      <a class="ui primary {{ project.modal_id }} button" href="{{ link.url }}" target="{{ link.target }}">{{ link.text }}</a>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
+          <div class="ui fluid card">
+            <div class="image">
               <img src="{{ project.img_small }}" data-src="{{ project.img_large }}" alt="{{ project.img_alt }}">
             </div>
             <div class="content">
-              <p class="description">
+              <div class="header">Title</div>
+              <div class="meta">
+                <a>Friends</a>
+              </div>
+              <div class="description">
                 {{ project.description|markdownify }}
-              </p>
+              </div>
+            </div>
+            <div class="extra content">
+              <span class="right floated">
+                Joined in 2013
+              </span>
+              <span>
+                <i class="user icon"></i>
+                75 Friends
+              </span>
             </div>
           </div>
         {% endfor %}
