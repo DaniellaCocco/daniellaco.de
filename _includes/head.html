@@ -49,14 +49,6 @@
       $('#projects .special.cards .image').dimmer({
         on: 'hover',
       });
-      // Open a modal with project details
-      $('#projects .special.cards .ror-case.button').click(function(){
-        $('#ror-case').modal('show');
-      });
-      // Deeplinking support
-      if(window.location.hash === "#ror-case") {
-        $('#ror-case').modal('show');
-      }
       // Lazyload project images
       $('#projects .special.cards .image img').visibility({
         type : 'image'
