@@ -27,6 +27,11 @@
               {% for link in project.links %}
                 <a class="ui mini basic {{ link.class }} button" href="{{ link.url }}">{{ link.text }}</a>
               {% endfor %}
+              {% if project.permalink %}
+                <a class="ui mini button" href="{{ project.permalink }}">
+                  {{ site.data.translations.view[page.lang] }}
+                </a>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
