@@ -10,3 +10,7 @@ permalink: pretty
 # Custom collections
 collections:
   - projects
+
+# Include in output
+include:
+  - _pages
