@@ -218,3 +218,22 @@ footer p {
     padding-bottom: 6rem;
   }
 }
+
+@media (min-width: 1680px) {
+
+  html, body {
+    font-size: 22px;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+
+  section#about {
+    padding-top: 8rem;
+  }
+
+  section#contact {
+    padding-bottom: 8rem;
+  }
+}
