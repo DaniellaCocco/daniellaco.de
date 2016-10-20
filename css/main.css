@@ -98,6 +98,16 @@ p a:hover:after {
   transition: 0.5s ease;
 }
 
+#main-menu .logo {
+  display: inline-block;
+  float: left;
+}
+
+#main-menu .language.toggle {
+  display: inline-block;
+  float: right;
+}
+
 #main-menu a.en:lang(en), #main-menu a.nl:lang(nl) {
   color: #515050;
 }
