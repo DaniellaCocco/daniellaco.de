@@ -2,10 +2,22 @@
 layout: default
 ---
 
-<article class="page">
-  <div class="ui centered padded grid">
-    <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
+<div class="ui centered padded grid">
+  <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
+    <article>
       {{ content|markdownify }}
-    </div>
+      <footer>
+        <a class="ui tiny circular image">
+          <img src="/images/profilepic.jpg">
+        </a>
+        <div class="content">
+          <address class="author">
+          <a class="header" rel="author" href="http://daniellacoc.co">Daniella Cocco</a></address>
+          <div class="description">
+            <p>Experienced web developer solving problems with quality code and good UI design.</p>
+          </div>
+        </div>
+      </footer>
+    </article>
   </div>
-</article>
+</div>
