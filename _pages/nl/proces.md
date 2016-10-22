@@ -13,7 +13,7 @@ title: "Het proces: De bouw van een website of app"
 
 ## Verkenning/Inventarisatie
 
-Als allereerste is het belangrijk om te ontdekken wat er precies gemaakt dient te worden. We bespreken wat zoal de wensen en doelen zijn. Hoe lang deze fase duurt is afhankelijk van de grootte en complexiteit van het project. Hoewel de ontwikkeling vervolgens iteratief verloopt, en we nooit echt klaar zijn met verkennen, is het wel belangrijk om te beginnen vanuit een bepaalde basis.
+Als allereerste is het belangrijk om te ontdekken wat er precies gemaakt dient te worden. We bespreken wat zoal de wensen en doelen zijn. Hoe lang deze fase duurt is afhankelijk van de grootte en complexiteit van het project. Hoewel de ontwikkeling vervolgens iteratief verloopt, en we nooit echt *klaar* zijn met verkennen, is het wel belangrijk om te beginnen vanuit een bepaalde basis.
 
 Doel is om zo vroeg mogelijk in het proces een schatting te geven van de kosten. We werken samen om tot een plan met deliverables te komen, gebaseerd op jouw budget en de beschikbare doorlooptijd.
 
