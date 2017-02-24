@@ -8,9 +8,9 @@
     <div class="fourteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
       <div class="ui two stackable cards">
         {% if page.lang == 'nl' %}
-          {% assign projects = site.projects | where: "lang", "nl" %}
+          {% assign projects = site.projects | where: "lang", "nl" | reverse %}
         {% else %}
-          {% assign projects = site.projects | where: "lang", "en" %}
+          {% assign projects = site.projects | where: "lang", "en" | reverse %}
         {% endif %}
         {% for project in projects %}
           <div class="ui fluid card">
