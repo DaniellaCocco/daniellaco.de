@@ -1,16 +1,6 @@
 # Site settings
-name: "Daniella Cocco"
-email: "d@daniellacoc.co"
 baseurl: ""
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-# Custom collections
-collections:
-  - projects
-
-# Include in output
-include:
-  - _pages

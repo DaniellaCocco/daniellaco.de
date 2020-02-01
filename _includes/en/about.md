@@ -1,1 +1,0 @@
-Experienced web developer with an expertise in front-end web development. I built my first website way back in 2000 and have been building websites professionally since 2010. Feel free to <a href="#contact">get in touch</a>.

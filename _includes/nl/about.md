@@ -1,1 +1,0 @@
-Ervaren web developer met een expertise in front-end web development. Ik bouwde mijn eerste website in 2000 en ben professioneel web developer sinds 2010. Neem gerust <a href="#contact">contact</a> op.

@@ -1,194 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-  <!-- Main metadata -->
-  <meta charset="utf-8">
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="map[name:Daniella Cocco email:d@daniellacoc.co]" name="author">
-  <meta content="Experienced web developer solving problems with quality code and good UI design. Currently available for hire." name="description">
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicons/favicon-194x194.png" sizes="194x194">
-  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/favicons/manifest.json">
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="apple-mobile-web-app-title" content="Daniella Cocco">
-  <meta name="application-name" content="Daniella Cocco">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Scripts and styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
-  <link href="/css/main.css" media="all" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      // Smooth in-page scroll
-      $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-        var target = this.hash;
-        var $target = $(target);
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-	        window.location.hash = target;
-	      });
-      });
-      // Lazyload project images
-      $('#projects .cards .image img').visibility({
-        type : 'image'
-      });
-    });
-  </script>
-  <title>Daniella Cocco - Web developer 🚩 Arnhem / Nijmegen, Netherlands</title>
-</head>
-
-  <body class="">
-    <div id="main-menu">
-  <div class="ui centered padded grid">
-    <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
-      <a class="logo" href="/">
-        <img src="/images/dc-logo.png" alt="DC Development logo" />
-      </a>
-      <span class="language toggle">
-        <a class="en" href="/">
-          EN
-        </a> |
-        <a class="nl" href="/nl">
-          NL
-        </a>
-      </span>
-    </div>
-  </div>
-</div>
-
-    <section id="about">
-  <div class="ui centered padded grid">
-    <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
-      <div class="profile">
-        <img class="ui centered circular image" src="/images/profilepic.jpg" alt="Profile picture">
-        <h1>Daniella Cocco</h1>
-        <p>
-          <span class="description">Web developer</span><br>
-          <span class="location">🚩 Arnhem / Nijmegen, Netherlands</span><br>
-          <span class="links">
-            <a href="https://linkedin.com/in/daniellacocco"><i class="linkedin icon"></i></a>
-            <a href="https://github.com/DaniellaCocco"><i class="github icon"></i></a>
-          </span>
-        </p>
+    <title>daniellacoc.co</title>
+    <meta name="description" content="Daniella Cocco's personal website." />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta charSet="utf-8" />
+    <link rel="canonical" href="https://daniellacoc.co" />
+    <link href="/styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png?v=NmbNNr7L0x"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png?v=NmbNNr7L0x"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png?v=NmbNNr7L0x"
+    />
+    <link rel="manifest" href="/site.webmanifest?v=NmbNNr7L0x" />
+    <link
+      rel="mask-icon"
+      href="/safari-pinned-tab.svg?v=NmbNNr7L0x"
+      color="#000000"
+    />
+    <link rel="shortcut icon" href="/favicon.ico?v=NmbNNr7L0x" />
+    <meta name="apple-mobile-web-app-title" content="daniellacoc.co" />
+    <meta name="application-name" content="daniellacoc.co" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="align-content">
+      <div class="logo">
+        <span class="logo-icon">
+          <svg
+            width="256px"
+            height="153px"
+            viewBox="0 0 256 153"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>DC Logo</title>
+            <g
+              id="p1"
+              stroke="none"
+              strokeWidth="1"
+              fill="none"
+              fillRule="evenodd"
+            >
+              <g
+                id="logo"
+                transform="translate(0.000000, -51.000000)"
+                fill="#000000"
+              >
+                <g transform="translate(0.000000, 51.000000)">
+                  <rect
+                    x="103.519126"
+                    y="51.9357798"
+                    width="50.3606557"
+                    height="50.5321101"
+                  />
+                  <rect
+                    x="153.879781"
+                    y="0"
+                    width="102.120219"
+                    height="50.5321101"
+                  />
+                  <rect
+                    x="153.879781"
+                    y="102.46789"
+                    width="102.120219"
+                    height="50.5321101"
+                  />
+                  <rect x="0" y="0" width="102.120219" height="50.5321101" />
+                  <rect
+                    x="0"
+                    y="102.46789"
+                    width="102.120219"
+                    height="50.5321101"
+                  />
+                  <rect x="0" y="0" width="50.3606557" height="153" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
+        <span class="logo-text">
+          daniellacoc.co
+        </span>
       </div>
-      <p>
-        
-          Experienced web developer with an expertise in front-end web development. I built my first website way back in 2000 and have been building websites professionally since 2010. Feel free to <a href="#contact">get in touch</a>.
-
-        
-      </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="mailto:d@daniellacoc.co">Email</a>
+          </li>
+          <li>
+            <a
+              class="external"
+              target="_blank"
+              href="https://www.linkedin.com/in/daniellacocco"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              class="external"
+              target="_blank"
+              href="https://github.com/DaniellaCocco"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="ui stackable centered padded grid">
-    <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
-      <h2 class="ui horizontal divider header">Recent projects</h2>
-    </div>
-  </div>
-  <div class="ui centered padded grid">
-    <div class="fourteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
-      <div class="ui two stackable cards">
-        
-        
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="/images/philips-azurion-experience.png" data-src="/images/philips-azurion-experience.png" alt="Philips Azurion Experience">
-            </div>
-            <div class="content">
-              <div class="header">Philips Azurion Experience</div>
-              <div class="description">
-                <p>For Lukkien I realised the responsive front-end as the lead front-end developer for the Philips Azurion Interactive Tour.</p>
-
-              </div>
-            </div>
-            <div class="extra right aligned content">
-              
-                <a class="ui mini basic  button" href="https://igt-interactive-tour.com">Visit</a>
-              
-              
-            </div>
-          </div>
-        
-          <div class="ui fluid card">
-            <div class="image">
-              <img src="/images/askja.png" data-src="/images/askja@2x.png" alt="Travel agency front-end development">
-            </div>
-            <div class="content">
-              <div class="header">Askja & VNC</div>
-              <div class="description">
-                <p>Development of linked front-ends for collaborating travel agencies (@<a href="http://tweedegolf.nl">TG</a>).</p>
-
-              </div>
-            </div>
-            <div class="extra right aligned content">
-              
-                <a class="ui mini basic  button" href="http://askja.nl">Askja</a>
-              
-                <a class="ui mini basic  button" href="http://vnc.nl">VNC</a>
-              
-              
-            </div>
-          </div>
-        
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="ui stackable centered padded grid">
-    <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
-      <h2 class="ui horizontal divider header">Hire me</h2>
-    </div>
-  </div>
-  <div class="ui centered padded grid">
-    <div class="sixteen wide mobile twelve wide tablet ten wide computer eight wide large screen seven wide widescreen column">
-      <p>Let's get in touch:</p>
-      <p>
-        <a class="contact-mail" href="mailto:d@daniellacoc.co" media="all" title="Daniella Cocco - Email" type="text/html">
-          d@daniellacoc.co
-        </a>
-      </p>
-      
-      
-<p>I can take care of most small-to-medium scale web projects. For other projects, I can collaborate with dedicated UI/UX designers, back-end developers, project managers, online marketeers, et cetera.</p>
-
-<p>I can usually get back to you within a day.</p>
-
-
-    </div>
-  </div>
-</section>
-
-
-    <footer>
-  <div class="ui stackable centered padded grid">
-    <div class="eight wide center aligned column">
-      <p>© Daniella Cocco</p>
-    </div>
-  </div>
-</footer>
-
   </body>
 </html>
