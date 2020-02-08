@@ -3,6 +3,26 @@
 
 /* Site-wide styles. */
 
+/* noto-sans-regular - latin-ext */
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans"), local("NotoSans"),
+       url("/noto-sans-v9-latin-ext-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("/noto-sans-v9-latin-ext-regular.woff") format("woff"), /* Modern Browsers */
+}
+
+/* noto-sans-700 - latin-ext */
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"),
+       url("/noto-sans-v9-latin-ext-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("/noto-sans-v9-latin-ext-700.woff") format("woff"), /* Modern Browsers */
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
