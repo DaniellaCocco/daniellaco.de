@@ -6,9 +6,41 @@ description: Daniella Cocco's blog.
 ---
 <div class="center-column">
   <div class="content-column">
+    <span class="logo-wrapper">
+      <a class="logo-link" href="/">{% include logo.html %}</a>
+    </span>
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a class="arrow back" href="/">Home</a>
+        </li>
+        <li>
+          <a
+            class="arrow external"
+            target="_blank"
+            href="https://www.linkedin.com/in/daniellacocco"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            class="arrow external"
+            target="_blank"
+            href="https://github.com/DaniellaCocco"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="mailto:d@daniellacoc.co">Email</a>
+        </li>
+      </ul>
+    </nav>
     <h1>Blog</h1>
-
-    <ul>
+    <ul class="posts">
       {% for post in site.posts %}
         <li>
           <time>{{ post.date | date: "%e %B %Y" }}</time>

@@ -1,7 +1,43 @@
 ---
 layout: default
+bodyclass: post
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-
-{{ content }}
+<div class="center-column">
+  <div class="content-column">
+    <span class="logo-wrapper">
+      <a class="logo-link" href="/">{% include logo.html %}</a>
+    </span>
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a class="arrow back" href="/blog">Blog</a>
+        </li>
+        <li>
+          <a
+            class="arrow external"
+            target="_blank"
+            href="https://www.linkedin.com/in/daniellacocco"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            class="arrow external"
+            target="_blank"
+            href="https://github.com/DaniellaCocco"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="mailto:d@daniellacoc.co">Email</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </div>
+</div>
