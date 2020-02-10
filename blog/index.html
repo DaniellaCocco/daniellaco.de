@@ -43,7 +43,9 @@ description: Daniella Cocco's blog.
     <ul class="posts">
       {% for post in site.posts %}
         <li>
-          <time>{{ post.date | date: "%e %B %Y" }}</time>
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+            {{ post.date | date: "%e %B %Y" }}
+          </time>
           <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
           <p>{{ post.excerpt }}</p>
         </li>
