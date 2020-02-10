@@ -29,9 +29,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a, a:hover, a:visited {
-  color: #000000;
-  text-decoration: none;
+a {
+  color: #0043ce;
+}
+
+a:visited {
+  color: #6929c4;
 }
 
 h1 {
@@ -79,6 +82,11 @@ h1 {
   }
 }
 
+a.logo-link, a:visited.logo-link {
+  color: #000;
+  text-decoration: none;
+}
+
 @media (max-width: 420px) {
   .logo {
     .logo-icon {
@@ -98,6 +106,7 @@ h1 {
 nav.site-nav {
 
   a, a:hover, a:visited {
+    color: #0043ce;
     display: inline-block;
     font-size: 18px;
     height: 48px;
