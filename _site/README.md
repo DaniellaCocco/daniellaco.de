@@ -1,4 +1,4 @@
-# daniellacoc.co
+# daniellaco.de
 
 Daniella Cocco's personal website.
 
@@ -24,4 +24,4 @@ jekyll build
 
 This will output the static site to `_site`.
 
-Any push to the master branch on GitHub will auto-deploy the latest generated site to [https://daniellacoc.co](https://daniellacoc.co) via GitHub Pages.
+Any push to the master branch on GitHub will auto-deploy the latest generated site to [https://daniellaco.de](https://daniellaco.de) via GitHub Pages.
