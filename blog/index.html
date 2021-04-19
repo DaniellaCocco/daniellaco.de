@@ -1,0 +1,55 @@
+---
+layout: default
+bodyclass: blog
+title: Blog
+description: Daniella Cocco's blog.
+---
+<div class="center-column">
+  <div class="content-column">
+    <span class="logo-wrapper">
+      <a class="logo-link" href="/">{% include logo.html %}</a>
+    </span>
+    <nav class="site-nav">
+      <ul>
+        <li>
+          <a class="arrow back" href="/">Home</a>
+        </li>
+        <li>
+          <a
+            class="arrow external"
+            target="_blank"
+            href="https://www.linkedin.com/in/daniellacocco"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            class="arrow external"
+            target="_blank"
+            href="https://github.com/DaniellaCocco"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="mailto:d@daniellacoc.co">Email</a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Blog</h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li>
+          <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+            {{ post.date | date: "%e %B %Y" }}
+          </time>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.description }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

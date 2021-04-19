@@ -1,6 +1,12 @@
-# Site settings
 baseurl: ""
-
-# Build settings
 markdown: kramdown
 permalink: pretty
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /blog/:year/:title
+sass:
+    style: compressed
